@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logoauto.jpg" alt="Logo do Auto Center">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="autopecas.html">Autopeças</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Agendamento de Serviços</h1>
+            <form id="agendamentoForm">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="marca">Marca do Veículo:</label>
+                <select id="marca" name="marca" required>
+                    <option value="" disabled selected>Selecione a Marca</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Tesla">Tesla</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <!-- Adicione outras marcas aqui -->
+                </select>
+
+                <label for="modelo">Modelo do Veículo:</label>
+                <select id="modelo" name="modelo" required>
+                    <option value="" disabled selected>Selecione o Modelo</option>
+                </select>
+
+                <label for="data">Data do Serviço:</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="descricao">Descrição do Serviço:</label>
+                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Auto Center - Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
